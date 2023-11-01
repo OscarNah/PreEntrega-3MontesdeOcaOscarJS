@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Powerpuff Girls Bazar</title>
+    <link rel="shortcut icon" href="../img/ThepowerpuffGirlsBazar.png" />
+    <!-- Iconos BS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Inicia header -->
+      <header class="headerIndex">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="../index.html">
+            <img class="logo img-fluid" src="../img/ThepowerpuffGirlsBazar.png" alt="Logo The Powerpuff Girls Bazar" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto textHeader bgPage">
+              <li class="nav-item">
+                <a class="nav-link active link-light espaciado text-black" aria-current="page" href="../index.html"> Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light espaciado text-black" href="productos.html"> Productos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light espaciado text-black" href="contacto.html"> Contacto </a>
+              </li>
+              <li class="nav-item espaciado text-black">
+                <a class="nav-link carritoBlanco" href="carrito.html">
+                  <i class="bi bi-cart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Termina header -->
+      <!-- Inicia Panel lateral para filtrar -->
+      <aside>
+        <nav>
+            <ul>
+                <li><a class="botonAside botonVolver" href="productos.html"><i class="bi bi-arrow-return-left"></i>Seguir comprando</a></li>
+                <li><a class="botonAside botonCarrito active" href="carrito.html"><i class="bi bi-cart"></i></a>Carrito</li>
+            </ul>
+        </nav>
+
+      </aside>
+      <!-- Termina Panel lateral para filtrar -->
+      <!-- Inicia Main -->
+      <main>
+        <h2 class="tituloPrincipal">Carrito de compras</h2>
+        <section class="contenedorCarrito">
+            <p class="carritoVacio">Tu carrito esta vacio. <i class="bi bi-emoji-frown"></i></p>
+
+            <div class="carritoProductos"> 
+                <div class="carritoProducto">
+                    <img src="../img/playera1.png" alt="">
+                    <div>
+                        <small>Producto</small>
+                        <h3>Playera 1</h3>
+                    </div>
+                    <div class="carritoProductosCantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carritoProductosPrecio">
+                        <small>Precio</small>
+                        <p>335</p>
+                    </div>
+                    <div class="carritoProductosSubtotal">
+                        <small>Subtotal</small>
+                        <p>335</p>
+                    </div>
+                    <button class="carritoProductoEliminar"><i class="bi bi-trash3"></i></button>
+                </div>
+                <div class="carritoProducto">
+                    <img src="../img/playera2.png" alt="">
+                    <div>
+                        <small>Producto</small>
+                        <h3>Playera 2</h3>
+                    </div>
+                    <div class="carritoProductosCantidad">
+                        <small>Cantidad</small>
+                        <p>2</p>
+                    </div>
+                    <div class="carritoProductosPrecio">
+                        <small>Precio</small>
+                        <p>258</p>
+                    </div>
+                    <div class="carritoProductosSubtotal">
+                        <small>Subtotal</small>
+                        <p>516</p>
+                    </div>
+                    <button class="carritoProductoEliminar"><i class="bi bi-trash3"></i></button>
+                </div>
+            </div>
+            <div class="carritoOpciones">
+                <div class="carritoAccionesizquierda">
+                    <button class="carritoAccionesVaciar">Vaciar Carrito</button>
+                </div>
+                <div class="carritoAccionesDerecha">
+                    <div class="carritoAccionesTotal">
+                        <p>Total:</p>
+                        <p id="total">851</p>
+                    </div>
+                    <button class="carritoAccionesComprar">COMPRAR AHORA</button>
+                </div>
+
+            </div>
+
+        </section>
+        
+      </main>
+      <!-- Termina Main -->
+      <!-- Inicia Footer -->
+      <footer>
+        <div class="footer container-fluid">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+              <div class="col-md-4 d-flex align-items-center">
+                <span class="text-black">&copy; 2023 The Powerpuff Girls Bazar Company, Inc</span>
+              </div>
+          
+              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class=" redesSociales" href="https://facebook.com"><i class="bi bi-facebook"></i></a></li>
+                <li class="ms-3"><a class=" redesSociales" href="https://instagram.com"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class=" redesSociales" href="https://twitter.com"><i class="bi bi-twitter"></i></a></li>
+              </ul>
+            </footer>
+          </div>
+      </footer>
+      <!-- Termina Footer -->
+    </div>
+
+    <!-- JS BS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
