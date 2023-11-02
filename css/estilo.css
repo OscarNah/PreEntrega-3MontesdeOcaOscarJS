@@ -16,6 +16,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
 
 ul{
     list-style: none;
@@ -39,7 +43,18 @@ a{
     padding: 1rem;
 }
 /* Header */
-.headerIndex{
+.headerImg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    background-image: url(../img/bannerProductos.jpg);
+    background-position: 50% 65%;
+    height: 65vh;
+}
+.header{
     background-color: var(--fairy-tale);
 }
 .logo {
@@ -71,4 +86,98 @@ a{
     font-size: 1.5rem;
     color: black;
 }
+.feliz{
+    font-size: 1.5rem;
+    color: red;
+}
+/* productos */
+main {
+    background-color: var(--white);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.cartaCategoria{
+padding-top: 1rem;
+}
+.categorias{
+    width: 100%;
+}
+.imgCards{
+    width: 100%;
+}
 
+/* Carrito */
+.contenedorCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.seguirComprando{
+    display: flex;
+    border: 0;
+    background-color: var(--fairy-tale);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bolder;
+    gap: 1rem; 
+}
+.carritoProductoImagen{
+    width: 6rem;
+    border-radius: 0.4rem;
+}
+.carritoProducto{
+    background-color: var(--fairy-tale);
+    border-radius: 1rem;
+    color: black;
+}
+.carritoProducto small{
+    color: grey;
+    font-size: 0.8rem;
+}
+.carritoProductoEliminar{
+    border: 0;
+    background-color: transparent;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.carritoAcciones{
+    display: flex;
+    justify-content: space-between;
+}
+.carritoAccionesVaciar{
+    border: 0;
+    background-color: var(--fairy-tale);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.carritoAccionesDerecha{
+    display: flex;
+
+}
+.carritoAccionesTotal{
+    display: flex;
+    border: 0;
+    background-color: var(--fairy-tale);
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    font-weight: bolder;
+    gap: 1rem; 
+}
+.carritoAccionesComprar{
+    border: 0;
+    background-color: var(--carnation-pink);
+    padding: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.desactivado{
+    display: none;
+}
