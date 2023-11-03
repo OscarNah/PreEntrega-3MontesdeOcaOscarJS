@@ -398,7 +398,16 @@ function actualizarBotonesAgregar() {
     });
 }
 
-const productosEnCarrito = [];
+let productosEnCarrito;
+let productosEnCarritoLS = localStorage.getItem("productos-en-carrito")
+
+
+if(productosEnCarritoLS){
+    productosEnCarrito = JSON.parse(productosEnCarritoLS);
+} else{
+    productosEnCarrito = [];
+}
+
 function agregarAlCarrito(e) {
     const idBoton = e.currentTarget.id;
     // prueba de que boton muestra el id del producto
@@ -413,7 +422,7 @@ function agregarAlCarrito(e) {
         productoAgregado.cantidad = 1;
         productosEnCarrito.push(productoAgregado);
         //prueba de que push agrega productos al array vacio productosEnCarrito
-        //console.log(productosEnCarrito);
-        localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
+        // console.log(productosEnCarrito);
+        localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
     }
 }
